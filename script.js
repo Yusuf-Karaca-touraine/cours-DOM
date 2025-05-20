@@ -1,3 +1,4 @@
-const newParent= document.getElementById("first-div");
-const catImgToMove = document.getElementById("second-cat-img");
-newParent.appendChild(catImgToMove);
+const imgDogs = document.querySelectorAll(".img-dog");
+for (let i = 0; i < imgDogs.length; i++) {
+    imgDogs[i].remove();
+}

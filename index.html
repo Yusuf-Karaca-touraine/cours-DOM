@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,23 +8,25 @@
       body {
         font-family: sans-serif;
       }
-
-      .box {
-        text-align: center;
+      .container-box {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100px;
+      }
+      .box {
+        display: inline-block;
         height: 100px;
-        background-color: peru;
-        color: white;
+        width: 100px;
+        margin: 10px;
+        background-color: coral;
       }
     </style>
   </head>
 
   <body>
-    <h1 class="title">Change the text!</h1>
-    <div class="box">Change the box!</div>
+    <div class="container-boxes">
+      <h1>Create a third box</h1>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
 
     <script src="script.js"></script>
   </body>

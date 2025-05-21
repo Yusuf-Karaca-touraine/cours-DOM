@@ -1,10 +1,7 @@
-body {
-    background-color: rgb(85, 82, 82);
-}
-
-img {
-    border-radius:30px;
-    background-size: contain;
-    height: 200px;
-    width: 500px;
-}
+.dropdown-menu-content {
+    display: none;
+  }
+  
+  .dropdown-menu-content.visible {
+    display: block;
+  }

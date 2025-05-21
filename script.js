@@ -1,17 +1,8 @@
-const form = document.querySelector("#todo-form");
-const input = document.querySelector("#task-input");
-const ulList = document.querySelector("#todo-list");
+const input = document.querySelector(".dropdown-btn");
 
-form.addEventListener("submit", function (e){
-   e.preventDefault();
-    
-    const textTask = input.value.trim();
-
-    if (textTask !== "") {
-        const newTestTask = document.createElement("li");
-        newTestTask.textContent = textTask;
-        ulList.appendChild(newTestTask);
-        input.value = "";
-    }
+input.addEventListener("click", () => {
+    const newClass = document.querySelector(".dropdown-menu-content");
+    newClass.classList.toggle("visible");
 });
+
 

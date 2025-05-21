@@ -1,8 +1,9 @@
-const input = document.querySelector(".dropdown-btn");
+const position= document.querySelector("#title-cursor-position");
 
-input.addEventListener("click", () => {
-    const newClass = document.querySelector(".dropdown-menu-content");
-    newClass.classList.toggle("visible");
+document.addEventListener("mousemove", (event) => {
+  const x = event.clientX;
+  const y = event.clientY;
+
+  position.innerHTML = `Position de la souris : X=${x}, Y=${y}`;
 });
-
 

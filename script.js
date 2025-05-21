@@ -1,10 +1,17 @@
-const venusaurUrl = "https://pokeapi.co/api/v2/pokemon/3/";
-fetch(venusaurUrl)
-.then((response) => response.json())
-.then((pokemon) => {
-    document.body.innerHTML +=`
-    <h2>${pokemon.name}</h2>
-    <img src="${pokemon.sprites.front_default}" alt="Halte la !"/>
-    `;
-    console.log(pokemon);
+const form = document.querySelector("#todo-form");
+const input = document.querySelector("#task-input");
+const ulList = document.querySelector("#todo-list");
+
+form.addEventListener("submit", function (e){
+   e.preventDefault();
+    
+    const textTask = input.value.trim();
+
+    if (textTask !== "") {
+        const newTestTask = document.createElement("li");
+        newTestTask.textContent = textTask;
+        ulList.appendChild(newTestTask);
+        input.value = "";
+    }
 });
+

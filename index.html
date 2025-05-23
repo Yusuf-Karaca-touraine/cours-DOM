@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Word Scramble</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="game-container">
+    <h1>Word Scramble</h1>
+    <div class="info">
+      <p>Tries: <span id="tries">0/5</span></p>
+      <p>Mistakes: <span id="mistakes"></span></p>
+    </div>
 
-  <body>
-    <div id="app"></div>
-    <ul>
-      <button class="dropdown-btn">Click here</button>
-      <div class="dropdown-menu-content">
-        <li>🐱 Link 1</li>
-        <li>🐹 Link 2</li>
-        <li>🦊 Link 3</li>
-        <li>🐻 Link 4</li>
-        <li>🐼 Link 5</li>
-        <li>🐻 Link 6</li>
-        <li>🐨 Link 7</li>
+    <div class="answer-box" id="answerBox"></div>
+    <div class="letters" id="letterButtons"></div>
+
+    <div class="buttons">
+        <button id="randomBtn">Random</button>
+        <button id="resetBtn">Reset</button>
       </div>
-    </ul>
-    <script src="script.js"></script>
-  </body>
+      
+
+</body>
 </html>
+
